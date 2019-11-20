@@ -8,6 +8,12 @@
                      HorizontalOptions="CenterAndExpand"
                      Margin="0,16">
             <Image Source="https://i.ibb.co/XZ5F0P0/Recipes-logo.png"/>
+            <BoxView Grid.Row="0"
+                     Grid.Column="0"                     
+                     BackgroundColor="Blue"
+                     VerticalOptions="Start"
+                     HeightRequest="100"
+                     />
             <SearchBar Placeholder="Pesquise Aqui..." />
             <RelativeLayout>
                 <AbsoluteLayout>

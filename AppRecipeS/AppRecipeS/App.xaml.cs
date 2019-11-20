@@ -11,7 +11,8 @@ namespace AppRecipeS
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            MainPage = new NavigationPage(new InicialPage());
         }
 
         protected override void OnStart()

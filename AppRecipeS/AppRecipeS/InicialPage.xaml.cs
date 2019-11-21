@@ -16,5 +16,20 @@ namespace AppRecipeS
         {
             InitializeComponent();
         }
+
+        private void BtnReceita1_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VBusca_SearchButtonPressed(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VCatalogo_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+
+        }
     }
 }

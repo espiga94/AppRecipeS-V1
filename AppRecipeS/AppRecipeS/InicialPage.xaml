@@ -4,27 +4,35 @@
              x:Class="AppRecipeS.InicialPage"
              BackgroundColor="#fud79e">
     <ContentPage.Content>
-        <StackLayout Spacing="4"
-                     HorizontalOptions="CenterAndExpand"
-                     Margin="0,16">
-            <Image Source="https://i.ibb.co/XZ5F0P0/Recipes-logo.png"/>
-            <BoxView Grid.Row="0"
-                     Grid.Column="0"                     
-                     BackgroundColor="Blue"
-                     VerticalOptions="Start"
-                     HeightRequest="100"
-                     />
-            <SearchBar Placeholder="Pesquise Aqui..." />
-            <RelativeLayout>
-                <AbsoluteLayout>
-                    <ScrollView>
-                        <ListView>
-                            
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <Frame BackgroundColor="#ffd699">
+                <Image Source="https://i.ibb.co/YWJp1fj/Recipes-logo.png"/>
+            </Frame>
+            <SearchBar  x:Name="vBusca"  Placeholder="Pesquise Aqui..."  SearchButtonPressed="VBusca_SearchButtonPressed"/>
+            <ListView x:Name="vCatalogo" ItemSelected="VCatalogo_ItemSelected" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                
+                                
 
-                        </ListView>
-                    </ScrollView>
-                </AbsoluteLayout>
-            </RelativeLayout>
+                            </ViewCell.ContextActions>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="200"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0" Source="https://www.w3schools.com/howto/img_snow.jpg" Aspect="AspectFill" HeightRequest="100" />
+                                <Label Grid.Row="1" Text="TESTE" FontSize="Medium"/>
+                               
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

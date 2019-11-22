@@ -18,10 +18,17 @@
                     <DataTemplate>
                         <ViewCell>
                             <Grid>
-                                <!--<Entry HeightRequest="300"
-                                       MinimumWidthRequest="380"
-                                       Placeholder="Digite sua receita"
-                                       x:Name="vReceita"/>-->  
+                                <StackLayout 
+                                    Grid.Row="1"
+                                    Grid.Column="0"
+                                    VerticalOptions="FillAndExpand"
+                                    Padding="16">
+                                   <Label Text="Ingredientes"/>
+                                   <Entry HeightRequest="300"
+                                   MinimumWidthRequest="380"
+                                   Placeholder="Escreva os ingredientes"
+                                   x:Name="vIngredientes"/>  
+                                </StackLayout>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

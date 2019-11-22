@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AppRecipeS.DAO;
+using AppRecipeS.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +14,11 @@ namespace AppRecipeS
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ReceitaPage : ContentPage
 	{
-		public ReceitaPage ()
+        
+        public ReceitaPage ()
 		{
 			InitializeComponent ();
-		}
+          
+        }
 	}
 }

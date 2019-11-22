@@ -13,6 +13,7 @@ namespace AppRecipeS.DAO
             var conn = Connection.GetConn();
             conn.Insert(produto);
             conn.Close();
+            //teste
         }
         public IEnumerable<ProdutoModel> Read(Func<ProdutoModel, bool> query)
         {

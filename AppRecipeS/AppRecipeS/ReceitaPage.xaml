@@ -18,7 +18,10 @@
                     <DataTemplate>
                         <ViewCell>
                             <Grid>
-                 
+                                <!--<Entry HeightRequest="300"
+                                       MinimumWidthRequest="380"
+                                       Placeholder="Digite sua receita"
+                                       x:Name="vReceita"/>-->  
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

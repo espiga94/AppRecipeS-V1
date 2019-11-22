@@ -15,6 +15,7 @@
                     FontAttributes="Bold"
                     Clicked="Button_Clicked"/>
             <ListView Margin="10,0" x:Name="vCatalogo" ItemSelected="VCatalogo_ItemSelected" HasUnevenRows="True">
+
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

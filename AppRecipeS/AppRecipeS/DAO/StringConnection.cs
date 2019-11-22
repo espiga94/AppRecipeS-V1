@@ -1,3 +1,4 @@
+
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
@@ -5,6 +6,7 @@ using System.Text;
 using PCLExt.FileStorage;
 using PCLExt.FileStorage.Folders;
 //using Windows.Storage;
+﻿
 using Xamarin.Forms;
 
 namespace AppRecipeS.DAO
@@ -14,6 +16,7 @@ namespace AppRecipeS.DAO
         string dbName = "MeuBanco.db";
         public string GetString()
         {
+
             /*
             if (Device.RuntimePlatform == Device.UWP)
             {
@@ -22,14 +25,16 @@ namespace AppRecipeS.DAO
             }
             else
             {*/
+            
                 //cria uma pasta base local para o dispositivo
                 var pasta = new LocalRootFolder();
                 //cria o arquivo
                 var arquivo =
                     pasta.CreateFile(dbName, PCLExt.FileStorage.CreationCollisionOption.OpenIfExists);
                 //abre o BD
-                return arquivo.Path;
+
 //            }
+
 
 
         }

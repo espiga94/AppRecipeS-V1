@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRecipeS.ReceitaPage"
+             BackgroundColor="#fud79e">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <Frame BackgroundColor="#ffd699">
+                <Image Source="https://i.ibb.co/YWJp1fj/Recipes-logo.png"/>
+            </Frame>
+            <Label Text="Cadraste sua receita" 
+                   TextColor="Black"
+                    FontSize="Large"
+                    FontAttributes="Italic"
+                    HorizontalTextAlignment="Center"/>
+            <ListView>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                 
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -9,25 +9,24 @@
                 <Image Source="https://i.ibb.co/YWJp1fj/Recipes-logo.png"/>
             </Frame>
             <SearchBar  x:Name="vBusca"  Placeholder="Pesquise Aqui..."  SearchButtonPressed="VBusca_SearchButtonPressed"/>
-            <ListView x:Name="vCatalogo" ItemSelected="VCatalogo_ItemSelected" HasUnevenRows="True">
+            <Button Text="Insira sua receita aqui"
+                    TextColor="White"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    Clicked="Button_Clicked"/>
+            <ListView Margin="10,0" x:Name="vCatalogo" ItemSelected="VCatalogo_ItemSelected" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <ViewCell.ContextActions>
-                                
-                                
-
-                            </ViewCell.ContextActions>
                             <Grid>
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="200"/>
-                                    <RowDefinition Height="auto"/>
-                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="0"/>
+                                    <RowDefinition Height="0"/>
                                 </Grid.RowDefinitions>
-
-                                <Image Grid.Row="0" Source="https://www.w3schools.com/howto/img_snow.jpg" Aspect="AspectFill" HeightRequest="100" />
-                                <Label Grid.Row="1" Text="TESTE" FontSize="Medium"/>
-                               
+                                <Image Grid.Row="0" Source="{Binding Imagem}" Aspect="AspectFill" HeightRequest="100" />
+                                <Label Grid.Row="1" Text="{Binding Titulo}" FontSize="Medium"/>
+                                <Label Grid.Row="2" Text="{Binding Descricao}" FontSize="Small"/>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

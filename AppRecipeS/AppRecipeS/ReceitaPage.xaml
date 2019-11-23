@@ -13,22 +13,39 @@
                     FontSize="Large"
                     FontAttributes="Italic"
                     HorizontalTextAlignment="Center"/>
-            <ListView>
+            <ListView x:Name="vReceita">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <StackLayout 
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    VerticalOptions="Start"
+                                    Padding="16">
+                                    <Label Text="Ingredientes"/>
+                                    <Entry HeightRequest="300"
+                                   MinimumWidthRequest="380"
+                                   Placeholder ="Escreva os ingredientes"
+                                   x:Name="vIngredientes"/>
+                                </StackLayout>
                                 <StackLayout 
                                     Grid.Row="1"
                                     Grid.Column="0"
-                                    VerticalOptions="FillAndExpand"
+                                    VerticalOptions="Start"
                                     Padding="16">
-                                   <Label Text="Ingredientes"/>
+                                   <Label Text="Modo de Preparo"/>
                                    <Entry HeightRequest="300"
-                                   MinimumWidthRequest="380"
-                                   Placeholder="Escreva os ingredientes"
-                                   x:Name="vIngredientes"/>  
+                                   MinimumWidthRequest="380"                                    
+                                   Placeholder="Modo de preparar"
+                                   x:Name="vPreparar"/>  
                                 </StackLayout>
+                                <!--<Label Grid.Row="2"
+                                    Grid.Column="2" Text="Nome do autor:"/>-->
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

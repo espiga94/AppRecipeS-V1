@@ -18,6 +18,7 @@ namespace AppRecipeS
         public ReceitaPage ()
 		{
 			InitializeComponent ();
+            vReceita.ItemsSource = new List<string> { "Paulo" };
           
         }
 	}
